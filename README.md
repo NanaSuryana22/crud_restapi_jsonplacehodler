@@ -75,12 +75,19 @@ Setelah itu buka aplikasi di browser: http://127.0.0.1:8000
 
 ### Screenshots
 - Halaman Utama
+
 ![MainPage](public/halaman_utama.png)
+
 Halaman Form Tambah Data
+
 ![CreatePage](public/create_page.png)
+
 Halaman Edit Data
+
 ![EditPage](public/edit_page.png)
+
 Halaman Show Page
+
 ![ShowPage](public/show_page.png)
 
 ---
