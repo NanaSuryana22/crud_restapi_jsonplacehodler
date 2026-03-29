@@ -16,81 +16,65 @@
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="form-group">
-                                      <label for="fullname">Nama Lengkap (Fullname)</label>
-                                      <input type="text" id="fullname"
-                                          class="form-control @error('fullname') is-invalid @enderror"
-                                          placeholder="ex : Mark Zugerberg.." name="fullname">
-                                      @if($errors->has('fullname'))
+                                      <label for="name">Nama Lengkap (Fullname)</label>
+                                      <input type="text" id="name"
+                                          class="form-control @error('name') is-invalid @enderror"
+                                          placeholder="ex : Mark Zugerberg.." name="name">
+                                      @if($errors->has('name'))
                                       <span class="invalid-feedback" role="alert">
-                                          <strong>{{$errors->first('fullname') }}</strong>
+                                          <strong>{{$errors->first('name') }}</strong>
                                       </span>
                                       @endif
                                   </div>
                                   <br />
                                   <div class="form-group">
-                                    <label for="gender">Jenis Kelamin</label><br />
-                                    <div class="form-check form-check-inline">
-                                      <input class="form-check-input" type="radio" name="gender" id="gender" value="1" checked>
-                                      <label class="form-check-label" for="gender">Pria</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                      <input class="form-check-input" type="radio" name="gender" id="gender" value="2">
-                                      <label class="form-check-label" for="gender">Wanita</label>
-                                    </div>
-                                    @if($errors->has('gender'))
+                                    <label for="username">Username</label>
+                                    <input type="text" id="username"
+                                        class="form-control @error('username') is-invalid @enderror"
+                                        placeholder="ex : markzuckerberg.." name="username">
+                                    @if($errors->has('username'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{$errors->first('gender') }}</strong>
+                                        <strong>{{$errors->first('username') }}</strong>
                                     </span>
                                     @endif
                                   </div>
                                   <br />
                                   <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" id="password"
-                                        class="form-control @error('password') is-invalid @enderror"
-                                        placeholder="Masukan Password..." name="password">
-                                    @if($errors->has('password'))
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email"
+                                        class="form-control @error('email') is-invalid @enderror"
+                                        placeholder="ex : mark@gmail.com" name="email">
+                                    @if($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{$errors->first('password') }}</strong>
+                                        <strong>{{$errors->first('email') }}</strong>
                                     </span>
                                     @endif
                                   </div>
                               </div>
                               <div class="col-md-6">
                                 <div class="form-group">
-                                  <label for="email">Email</label>
-                                  <input type="text" id="email"
-                                      class="form-control @error('email') is-invalid @enderror"
-                                      placeholder="ex : mark@gmail.com" name="email">
-                                  @if($errors->has('email'))
+                                  <label for="phone">Number Phone</label>
+                                  <input type="text" id="phone"
+                                      class="form-control @error('phone') is-invalid @enderror"
+                                      placeholder="ex : 08123456789" name="phone">
+                                  @if($errors->has('phone'))
                                   <span class="invalid-feedback" role="alert">
-                                      <strong>{{$errors->first('email') }}</strong>
+                                      <strong>{{$errors->first('phone') }}</strong>
                                   </span>
                                   @endif
                                 </div>
                                 <br />
                                 <div class="form-group">
-                                  <label for="dob">Tanggal Lahir</label>
-                                  <input type="date" id="dob"
-                                      class="form-control @error('dob') is-invalid @enderror"
-                                      placeholder="Masukkan tanggal lahir anda.." name="dob">
-                                  @if($errors->has('dob'))
-                                  <span class="invalid-feedback" role="alert">
-                                      <strong>{{$errors->first('dob') }}</strong>
-                                  </span>
-                                  @endif
-                                </div>
-                                <p>
-                                <div class="form-group">
-                                  <label for="password_confirmation">Konfirmasi Password</label>
-                                  <input type="password" id="password_confirmation"
-                                      class="form-control @error('password_confirmation') is-invalid @enderror"
-                                      placeholder="Konfirmasi Password.." name="password_confirmation">
-                                  @if($errors->has('password_confirmation'))
-                                  <span class="invalid-feedback" role="alert">
-                                      <strong>{{$errors->first('password_confirmation') }}</strong>
-                                  </span>
-                                  @endif
+                                  <label for="website">Website</label>
+                                    <input type="text" id="website"
+                                        class="form-control @error('website') is-invalid @enderror"
+                                        placeholder="ex : mark.com" name="website">
+                                    @if($errors->has('website'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{$errors->first('website') }}</strong>
+                                    </span>
+                                    @endif
+                                  </div>
                                 </div>
                               </div>
                               <div class="col-md-12 mt-3">

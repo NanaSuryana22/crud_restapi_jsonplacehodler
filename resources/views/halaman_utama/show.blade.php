@@ -8,11 +8,11 @@
       Detail Information
     </div>
     <div class="card-body">
-      <p class="card-text">Fullname : {{ $data['fullname'] }}</p>
-      <p class="card-text">Email : {{ $data['email'] }}</p>
-      <p class="card-text">Gender : {{ $data['gender'] == 1 ? 'Pria' : 'Wanita' }}</p>
-      <p class="card-text">Date Of Brithday : {{ $data['dob'] }}</p>
-      <p class="card-text">Join Date : {{ $data['created_date'] }}</p>
+      <p class="card-text">Fullname : {{ $data['name'] }}</p>
+      <p class="card-text">Username : {{ $data['username'] }}</p>
+      <p class="card-text">Email : <a href="mailto:{{ $data['email'] }}">{{ $data['email'] }}</a></p>
+      <p class="card-text">Phone Number : <a href="tel:{{ $data['phone'] }}">{{ $data['phone'] }}</a></p>
+      <p class="card-text">Website : <a href="http://www.{{ $data['website'] }}">{{ $data['website'] }}</p>
       <a href="{{route('halaman_utama.index')}}" class="btn btn-primary pull-right">Kembali</a>
     </div>
   </div>

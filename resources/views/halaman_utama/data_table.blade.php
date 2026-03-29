@@ -2,21 +2,21 @@
   <thead>
     <tr>
       <th scope="col">Fullname</th>
-      <th scope="col">Gender</th>
+      <th scope="col">Username</th>
       <th scope="col">Email</th>
-      <th scope="col">Date Of Brithday</th>
-      <th scope="col">Join Date</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Website</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
-    @foreach ($datas as $no => $data)
+    @foreach ($datas as $data)
         <tr>
-          <td>{{ $data['fullname'] }}</td>
-          <td>{{ $data['gender'] == 1 ? 'Laki-laki' : 'Perempuan' }}</td>
-          <td>{{ $data['email'] }}</td>
-          <td>{{ $data['dob'] }}</td>
-          <td>{{ $data['created_date'] }}</td>
+          <td>{{ $data['name'] }}</td>
+          <td>{{ $data['username'] }}</td>
+          <td><a href="mailto:{{ $data['email'] }}">{{ $data['email'] }}</a></td>
+          <td><a href="tel:{{ $data['phone'] }}">{{ $data['phone'] }}</a></td>
+          <td><a href="http://www.{{ $data['website'] }}">{{ $data['website'] }}</a></td>
           <td>
             <a class="btn btn-sm btn-primary"
               href="{{ route('halaman_utama.show',$data['id']) }}" title="Lihat Detail">

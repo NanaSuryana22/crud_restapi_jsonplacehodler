@@ -4,7 +4,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Tes Nana Suryana</a>
+      <a class="navbar-brand" href="https://jsonplaceholder.typicode.com/" target="_blank">CRUD Rest API - JSONPlaceholder</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{ route('halaman_utama.index') }}">Data Collection</a>
