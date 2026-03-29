@@ -15,7 +15,7 @@ Aplikasi **Laravel CRUD** yang terintegrasi dengan **JSONPlaceholder User API** 
 
 - **Laravel**
 - **PHP**
-- **Bootstrap / Tailwind** (sesuaikan dengan project kamu)
+- **Bootstrap**
 - **JSONPlaceholder API**
 
 ---
@@ -44,13 +44,13 @@ php artisan key:generate
 ---
 
 ### 5. Atur konfigurasi .env
-Sesuaikan file .env sesuai kebutuhan project kamu, terutama bagian database:
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=nama_database
-DB_USERNAME=root
-DB_PASSWORD=
+Sesuaikan file .env sesuai kebutuhan project kamu :
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=nama_database
+- DB_USERNAME=root
+- DB_PASSWORD=
 
 ---
 
@@ -67,21 +67,21 @@ Setelah itu buka aplikasi di browser: http://127.0.0.1:8000
 ---
 
 ### Struktur Halaman
-Halaman Utama: menampilkan daftar user
-Form Tambah Data: untuk menambahkan user baru
-Form Edit Data: untuk mengubah data user yang sudah ada
+- Halaman Utama: menampilkan daftar user
+- Form Tambah Data: untuk menambahkan user baru
+- Form Edit Data: untuk mengubah data user yang sudah ada
 
 ----
 
 ### Screenshots
-Halaman Utama
-(public/halaman_utama.png)
+- Halaman Utama
+![MainPage](public/halaman_utama.png)
 Halaman Form Tambah Data
-(public/create_page.png)
+![CreatePage](public/create_page.png)
 Halaman Edit Data
-(public/edit_page.png)
+![EditPage](public/edit_page.png)
 Halaman Show Page
-(public/show_page.png)
+![ShowPage](public/show_page.png)
 
 ---
 
@@ -91,10 +91,10 @@ Project ini menggunakan:
 
 Endpoint yang umum dipakai:
 
-GET /users → menampilkan data user
-POST /users → menambah data user
-PUT /users/{id} → mengubah data user
-DELETE /users/{id} → menghapus data user
+- GET /users → menampilkan data user
+- POST /users → menambah data user
+- PUT /users/{id} → mengubah data user
+- SHOW /users/{id} → melihat data user
 
 ---
 # Catatan
